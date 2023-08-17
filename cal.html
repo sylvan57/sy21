@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calstyle.css">
+</head>
+<body>
+    <div class="calculator">
+        <input class="inputdisplay" value="">
+        <table>
+            <tr>
+                <td>
+                    <input type="button" value="C" onclick="clearall('C')">
+                <td>
+                    <input type="button" value="←" onclick="deleteChar('←')">
+                    </td>
+                    <td>
+                    <input type="button" value="/" onclick="insertChar('/')">
+                    </td>
+                    <td>
+                    <input type="button" value="*" onclick="insertChar('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="insertChar('7')">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="insertChar('8')">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="insertChar('9')">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="insertChar('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="insertChar('4')">
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="insertChar('5')">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="insertChar('6')">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="insertChar('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="insertChar('1')">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="insertChar('2')">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="insertChar('3')">
+                </td>
+                <td rowspan="2">
+                    <input type="button" value="=" onclick="result('=')" style="height: 171px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="." onclick="insertChar('.')">
+                    </td>
+                    <td colspan="2">
+                    <input type="button" value="0" onclick="insertChar('0')" style="width: 171px;">
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="calscript.js"></script>
+    </div>
+</body>
+</html>
